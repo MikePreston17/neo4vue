@@ -1,36 +1,29 @@
 {
-  "name": "neo4vue",
-  "version": "1.0.0",
-  "description": "Neo4j hooks for Vue3",
-  "main": "index.js",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "test": "node ./test/index.js",
-    "docker": "docker pull neo4j",
-    "run": "docker run \\ --publish=7474:7474 --publish=7687:7687 \\ --volume=$HOME/neo4j/data:/data \\ neo4j",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MikePreston17/neo4vue.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/MikePreston17/neo4vue/issues"
-  },
-  "homepage": "https://github.com/MikePreston17/neo4vue#readme",
   "dependencies": {
-    "neo4j-driver": "^4.4.5"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-vite": "^0.1.33",
     "@storybook/vue3": "^6.4.22",
+    "@vitejs/plugin-vue": "^2.3.1",
     "babel-loader": "^8.2.5",
-    "vue-loader": "^16.8.3"
+    "typescript": "^4.5.4",
+    "vite": "^2.9.7",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.34.7"
   }
 }
