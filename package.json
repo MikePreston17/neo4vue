@@ -1,0 +1,22 @@
+{
+  "name": "neo4vue",
+  "version": "1.0.0",
+  "description": "Neo4j hooks for Vue3",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js",
+    "install": "docker pull neo4j",
+    "run": "docker run \\ --publish=7474:7474 --publish=7687:7687 \\ --volume=$HOME/neo4j/data:/data \\ neo4j"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikePreston17/neo4vue.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MikePreston17/neo4vue/issues"
+  },
+  "homepage": "https://github.com/MikePreston17/neo4vue#readme"
+}
